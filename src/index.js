@@ -43,16 +43,12 @@ class BaseAdaptor {
     throw new NotImplementedError('delete method not implemented');
   }
 
-  static drop () {
-    throw new NotImplementedError('drop method not implemented');
-  }
-
-  static dropDatabase () {
+  static deleteDatabase () {
     throw new NotImplementedError('dropDatabase method not implemented');
   }
 
-  static create () {
-    throw new NotImplementedError('create method not implemented');
+  static createDatabase () {
+    throw new NotImplementedError('createDatabase method not implemented');
   }
 
   static addColumn () {
@@ -71,12 +67,12 @@ class BaseAdaptor {
     throw new NotImplementedError('renameColumn method not implemented');
   }
 
-  static dropColumn () {
+  static deleteColumn () {
     throw new NotImplementedError('dropColumn method not implemented');
   }
 
-  static list () {
-    throw new NotImplementedError('list method not implemented');
+  static listDatabase () {
+    throw new NotImplementedError('listDatabase method not implemented');
   }
 }
 
