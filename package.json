@@ -4,7 +4,7 @@
   "description": "Base adaptor to be extended",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "babel src --out-dir dist"
   },
   "repository": {
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/CloudBoost/data-adaptor-base/issues"
   },
-  "homepage": "https://github.com/CloudBoost/data-adaptor-base#readme"
+  "homepage": "https://github.com/CloudBoost/data-adaptor-base#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
 }

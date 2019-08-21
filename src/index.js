@@ -1,10 +1,4 @@
-class NotImplementedError extends Error {
-  constructor (...params) {
-    super(...params);
-
-    this.name = 'NotImplementedError';
-  }
-}
+const NotImplementedError = require('./notImplementedError');
 
 class BaseAdaptor {
   static connect () {
@@ -44,7 +38,7 @@ class BaseAdaptor {
   }
 
   static deleteDatabase () {
-    throw new NotImplementedError('dropDatabase method not implemented');
+    throw new NotImplementedError('deleteDatabase method not implemented');
   }
 
   static createDatabase () {
@@ -68,11 +62,11 @@ class BaseAdaptor {
   }
 
   static deleteColumn () {
-    throw new NotImplementedError('dropColumn method not implemented');
+    throw new NotImplementedError('deleteColumn method not implemented');
   }
 
-  static listDatabase () {
-    throw new NotImplementedError('listDatabase method not implemented');
+  static listDatabases () {
+    throw new NotImplementedError('listDatabases method not implemented');
   }
 }
 
