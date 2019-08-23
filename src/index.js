@@ -65,8 +65,12 @@ class BaseAdaptor {
     throw new NotImplementedError('deleteColumn method not implemented');
   }
 
-  static listDatabases () {
-    throw new NotImplementedError('listDatabases method not implemented');
+  static serialize () {
+    throw new NotImplementedError('serialize method not implemented');
+  }
+
+  static deserialize () {
+    throw new NotImplementedError('deserialize method not implemented');
   }
 }
 

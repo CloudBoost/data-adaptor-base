@@ -66,7 +66,11 @@ describe("BaseAdaptor class", () => {
     expect(BaseAdaptor.deleteColumn).toThrow(new NotImplementedError('deleteColumn method not implemented'));
   });
 
-  test('listDatabases method should throw NotImplementedError', () => {
-    expect(BaseAdaptor.listDatabases).toThrow(new NotImplementedError('listDatabases method not implemented'));
+  test('serialize method should throw NotImplementedError', () => {
+    expect(BaseAdaptor.serialize).toThrow(new NotImplementedError('serialize method not implemented'));
+  });
+
+  test('deserialize method should throw NotImplementedError', () => {
+    expect(BaseAdaptor.deserialize).toThrow(new NotImplementedError('deserialize method not implemented'));
   });
 });
